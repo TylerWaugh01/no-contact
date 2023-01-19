@@ -97,6 +97,8 @@
     <article id="contact">
       <h2>Contact Me</h2>
       <p>I'd really like to hear from you!</p>
+      <fieldset>
+        <legend>Personal Info</legend>
       <form action="https://httpbin.org/get" method="get">
         <p>
           <label for="firstName">First Name:</label>
@@ -148,6 +150,19 @@
             <option value="other">
           </datalist>
         </p> -->
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>What is your favorite food?</legend>
+        <p>
+          <input type="radio" name="food" id="tacos" value="tacos">
+          <label for="tacos">Tacos</label>
+          <input type="radio" name="food" id="pizza" value="pizza">
+          <label for="pizza">pizza</label>
+          <input type="radio" name="food" id="other" value="other">
+          <label for="other">Other</label>
+        </p>
+      </fieldset>
       </form>
     </article>
   </main>
