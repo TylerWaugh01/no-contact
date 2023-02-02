@@ -3,24 +3,24 @@ html {
 }
 
 body {
-    background-color: #333;
-    color: whitesmoke;
+    background-color: papayawhip;
+    color: black
 }
 
 a {
-    color: aliceblue;
+    color: darkblue
 }
 
 a:visited {
-    color: lightgrey;
+    color: blueviolet
 }
 
 a:hover, a:active {
-    color: #eee
+    color: rgb(150, 94, 203)
 } 
 
 table, tr, th, td, caption {
-    border: 1px solid #eee;
+    border: 1px solid darkorange;
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
     padding: 0.5rem;
