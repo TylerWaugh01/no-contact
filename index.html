@@ -8,6 +8,7 @@
   <title>No Contact Delivery</title>
   <link rel="icon" href="burger.png" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css" type="text/css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -35,25 +36,39 @@
 
   <hr />
   <main>
+    <section aria-label="Newest Photos">
     <article id="about">
       <p>
         In a "no contact delivery", the only communication between driver and
         customer is often a doorstep photograph proving a sucessful delivery.
       </p>
-        <figure>
+      <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
           <img src="img/1.JPG" alt="A house with food outside" title="house with food" width="500" height="600"
-            loading="lazy" />
-          <figcaption>One One One</figcaption>
-        </figure>
-        <figure>
-          <figcaption>An Example of HTML5 code</figcaption>
-        </figure>
-      <p>
+          />
+        </li> 
+        <li class="slide">
+          <img src="img/2.JPG" title="House with double xmas tree" width="500" height="600" />
+          
+        </li> 
+        <li class="slide">
+          <img src="img/3.JPG" title="Blue door house" width="500" height="600"  />         
+        </li> 
+        <li class="slide">
+          <img src="img/4.JPG" title="house with food" width="500" height="600" />
+        </li>
+        </ul>
+      </div>
+          <p>
         This pixel receipt is the new food in front of their familiar home. A
         timestamp of a sucessful job completed.Temporarily information
         available in the app.
       </p>
     </article>
+
 
     <hr />
 
@@ -77,6 +92,7 @@
         </tfoot>
       </table>
     </article>
+  </section>
 
     <figure>
       <img src="img/2.JPG" title="house with food" width="500" height="600" loading="lazy" />
