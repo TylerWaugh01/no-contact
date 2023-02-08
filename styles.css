@@ -86,12 +86,12 @@ a {
     color: darkblue
 }
 
-a:visited {
+/* a:visited {
     color: blueviolet
-}
+} */
 
 a:hover, a:active {
-    color: rgb(150, 94, 203)
+    color: #97a7b3ff
 } 
 
 table, tr, th, td, caption {
@@ -106,7 +106,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #7e7f9aff
   }
 
   li {
