@@ -8,8 +8,9 @@ html {
 
 body {
     margin: 0;
-    background-color: #cae7b9ff; 
-    color: #7e7f9aff
+    background-color: #8ef9f3ff;
+    color: #8377d1ff;
+    padding: 0;
 }
 
 .carousel {
@@ -101,12 +102,16 @@ table, tr, th, td, caption {
     padding: 0.5rem;
 }
 
+nav {
+  width: 100%;
+  }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #7e7f9aff
+    background-color: #93bedfff;
   }
 
   li {
@@ -125,12 +130,16 @@ ul {
     background-color: #111;
   }
 
-  /* CSS HEX 
-  --tea-green: #cae7b9ff;
-  --buff: #f3de8aff;
-  --vivid-tangerine: #eb9486ff;
-  --rhythm: #7e7f9aff;
-  --cadet-grey: #97a7b3ff;
-  
- 
-  /* 
+h1 {
+  position: relative;
+  left: 50%;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* CSS HEX
+--spring-green: #5efc8dff;
+--ice-blue: #8ef9f3ff;
+--powder-blue: #93bedfff;
+--tropical-indigo: #8377d1ff;
+--chinese-violet: #6d5a72ff; */
