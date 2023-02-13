@@ -29,73 +29,78 @@
   </header>
 
   <style>
-    .item1 { grid-area: text; }
-    .item2 { grid-area: image; }
-    .item3 { grid-area: main; }
-    .item4 { grid-area: right; }
-    .item5 { grid-area: footer; }
+    .item1 { grid-area: title; }
+    .item2 { grid-area: text; }
+    .item3 { grid-area: image; }
+
     
     .grid-container {
       display: grid;
       grid-template-areas:
-        'image main text'
-        'image main text';
+        'title title title title title title'
+        'text text image image image image'
+        'text text image image image image';
       gap: 10px;
       background-color: #2196F3;
       padding: 10px;
     }
     
-    .grid-container > div {
+     .grid-container > div {
       background-color: rgba(255, 255, 255, 0.8);
       text-align: center;
       padding: 20px 0;
       font-size: 30px;
-    }
+    } 
     </style>
     
-    <h1>Grid Layout</h1>
-    
-    <p>This grid layout contains six columns and three rows:</p>
-    
+
     <div class="grid-container">
-      <div class="item1"></div>
-      <div class="item2"></div>
-      <div class="item3"></div>
+      <div class="item1">
+        <h2>Digital, Fleeting, Communication</h2>
+      </div>
+      <div class="item2">
+      <p>
+          In a "no contact delivery", the only communication between driver and
+          customer is often a doorstep photograph proving a sucessful delivery. This pixel receipt is the new food in front of their familiar home. A
+          timestamp of a sucessful job completed.Temporarily information
+          available in the app.
+        </p>
+      </div>
+       <div class="carousel item3" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="img/1.JPG" alt="A house with food outside" title="house with food" width="50" height="100"
+          />
+        </li> 
+        <li class="slide">
+          <img src="img/2.JPG" title="House with double xmas tree" width="50" height="100" />
+          
+        </li> 
+        <li class="slide">
+          <img src="img/3.JPG" title="Blue door house" width="50" height="100"  />         
+        </li> 
+        <li class="slide">
+          <img src="img/4.JPG" title="house with food" width="50" height="100" />
+        </li>
+        </ul>
+      </div>
     </div>
 
   <main>
     <section aria-label="Newest Photos">
     <article id="about">
-      <h2>Digital, Fleeting, Communication</h2>
+      <!-- <h2>Digital, Fleeting, Communication</h2>
       <p>
         In a "no contact delivery", the only communication between driver and
         customer is often a doorstep photograph proving a sucessful delivery. This pixel receipt is the new food in front of their familiar home. A
         timestamp of a sucessful job completed.Temporarily information
         available in the app.
-      </p>
-      <div class="carousel" data-carousel>
-      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-      <ul data-slides>
-        <li class="slide" data-active>
-          <img src="img/1.JPG" alt="A house with food outside" title="house with food" width="500" height="600"
-          />
-        </li> 
-        <li class="slide">
-          <img src="img/2.JPG" title="House with double xmas tree" width="500" height="600" />
-          
-        </li> 
-        <li class="slide">
-          <img src="img/3.JPG" title="Blue door house" width="500" height="600"  />         
-        </li> 
-        <li class="slide">
-          <img src="img/4.JPG" title="house with food" width="500" height="600" />
-        </li>
-        </ul>
-      </div>
-    </article>
+      </p> -->
+   
 
-    <article id="rules">
+    <!-- <article id="rules">
       <table>
         <thead>
           <tr>
@@ -218,7 +223,7 @@
       <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
       </form>
     </article>
-  </main>
+  </main> -->
 
   <hr />
   <footer>
