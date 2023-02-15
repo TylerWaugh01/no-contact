@@ -8,8 +8,8 @@ html {
 
 body {
     margin: 0;
-    background-color: #8ef9f3ff;
-    color: #8377d1ff;
+    /* background-color: #8ef9f3ff;
+    color: #8377d1ff; */
     padding: 0;
 }
 
@@ -102,7 +102,7 @@ table, tr, th, td, caption {
     padding: 0.5rem;
 }
 
-nav {
+/* nav {
   margin:0px auto;
   left:0px;
   right:0px;
@@ -111,16 +111,16 @@ nav {
 	padding: 0;
 	background-color: #f2f2f2;
 	border-bottom: 1px solid #ccc;
-  }
+  } */
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #93bedfff;
+    overflow: auto;
+    background-color: rgb(4, 4, 4);
   }
-
+ 
   li {
     float: left;
   }
