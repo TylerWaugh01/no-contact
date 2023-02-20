@@ -101,7 +101,7 @@ table, tr, th, td, caption {
 }
 
 nav {
-  margin:0px auto;
+  margin-top: 10px;
   left:0px;
   right:0px;
   width: 100%;
@@ -114,7 +114,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-color: rgb(4, 4, 4);
+    /* background-color: rgb(4, 4, 4); */
   }
  
   li {
@@ -123,14 +123,14 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #111;
+    color: #ada3a3;
   }
 
 h1 {
@@ -140,9 +140,25 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* CSS HEX
---spring-green: #5efc8dff;
---ice-blue: #8ef9f3ff;
---powder-blue: #93bedfff;
---tropical-indigo: #8377d1ff;
---chinese-violet: #6d5a72ff; */
+.item1 { grid-area: title; }
+    .item2 { grid-area: text; }
+    .item3 { grid-area: image; }
+
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'title title'
+        'text image'
+        'text image';
+      gap: 10px;
+      background-color: #ffffff;
+      padding: 10px;
+    }
+    
+     .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    } 
