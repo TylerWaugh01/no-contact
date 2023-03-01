@@ -75,13 +75,13 @@
     right: 1rem;
   }
 
-a {
+/* a {
     color: rgb(0, 0, 0)
 } 
 
  a:visited {
     color: blueviolet
-} 
+}  */
 
 a:hover, a:active {
     color: #97a7b3ff
@@ -118,6 +118,8 @@ ul {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    color: black;
+    font-size: 1.2em;
   }
   
    li a:hover {
