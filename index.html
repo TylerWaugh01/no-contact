@@ -12,8 +12,56 @@
   <script src="https://kit.fontawesome.com/4ab0f0191c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<style>
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(247, 145, 2);
+  }
 
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2a42e4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  </style>
+  </head>
+  <body>
+  
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="/"><i class="fa fa-fw fa-home"></i> No Contact Delivery</a>
@@ -21,35 +69,29 @@
     <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
     <a href="/"><i class="fa fa-rocket"></i> Rules</a>
   </div>
+  
+<div style="font-size:30px;cursor:pointer;margin-top:10px;" onclick="openNav()">&#9776; No Contact Delivery</div>
 
-<!-- <nav>
-      <ul>
-        <li>
-          <a href="/"><i class="fa fa-fw fa-home"></i> No Contact Delivery</a>
-        </li>
-        <li>
-          <a href="/about.html"><i class="fa fa-question"></i> About</a>
-        </li>
-        <li>
-          <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        </li>
-        <li>
-          <a href="/"><i class="fa fa-rocket"></i> Rules</a>
-        </li>
-      </ul>
-</nav> -->
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+     
+  </body>
 
 
 
-  <header>
-    <h1>Digital, Fleeting, Communication</h1>
-  </header>
 
 
 
-    <div class="grid-container">
+
+    <!-- <div class="grid-container">
       <div class="item1">
       <p>
           In a "no contact delivery", the only communication between driver and
@@ -62,7 +104,7 @@
         <img src="img/2.JPG" title="House with double xmas tree" width="600" height="700" />
       </div>
     </div>
-    
+     -->
 
        <!-- <div class="carousel item3" data-carousel>
       <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
@@ -85,7 +127,7 @@
         </ul>
       </div>
     </div> -->
- 
+<!--  
     <footer>
     <p>
       &lt;&lt;&lt; &copy; <a href="about.html">Tyler Waugh</a> &gt;&gt;&gt;
@@ -94,6 +136,6 @@
       <a href="#">Back To Top</a>
     </p>
   </footer>
-</body>
+</body> -->
 
 </html>
