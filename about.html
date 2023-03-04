@@ -2,57 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" >
-    <meta name="author" content="Tyler Waugh" >
-    <meta name="description" content="Hi, I'm Tyler Waugh. This page is about me" >
-    <title>About Tyler Waugh</title>
-    <link rel="icon" href="html5.png" type="image/x-icon" >
-    <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="author" content="Tyler Waugh" />
+  <meta name="description" content="A Food Photo Blog" />
+  <title>No Contact Delivery</title>
+  <link rel="icon" href="burger.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/4ab0f0191c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1>Hi, I'm Tyler Waugh</h1>
-    <header>    
-        <nav aria-label="primary-navigation">
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/contact.html">Contact</a>
-            </li>
-            <li>
-          </li>
-          </ul>
-        </nav>
-      </header>
-    
-    <hr>
-     <p>
-        Bio Ipsom
-      
-    </p>
-    <hr>
-   <ul> 
-        <li>Download my <a href="img/tyler_waugh_resume.pdf" download>resume</a>
-        </li>
-        <li>
-            Contact me at <a  href="mailto:tylerwaughwebdev@email.com">My email address</a>
-        </li>
-        <li>
-            Dial <a href="tel:+7852246976">my phone number</a>
-        </li>
-        <li>
-            Open <a href="https://www.google.com/" target="_blank">Google</a> in a new tab
-        </li>
-         
-    </ul>
-    <hr>
+<style>
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(247, 145, 2);
+  }
 
-    &lt;&lt;&lt; &copy; <a href="about.html">Tyler Waugh</a> &gt;&gt;&gt;
-    <p>
-        <a href="/">Back To Home</a>
-    </p>
-</body>
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2a42e4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/"><i class="fa fa-fw fa-home"></i> No Contact Delivery</a>
+    <a href="/about.html"><i class="fa fa-question"></i> About</a>
+    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="/"><i class="fa fa-rocket"></i> Rules</a>
+  </div>
+  
+<div style="font-size:30px;cursor:pointer;margin-top:10px;" onclick="openNav()">&#9776; No Contact Delivery</div>
+
+<h1>Hi, I'm Tyler Waugh</h1>
+<header>    
+    <nav aria-label="primary-navigation">
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+        <li>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+<hr>
+ <p>
+    Bio Ipsom
+  
+</p>
+<hr>
+<ul> 
+    <li>Download my <a href="img/tyler_waugh_resume.pdf" download>resume</a>
+    </li>
+    <li>
+        Contact me at <a  href="mailto:tylerwaughwebdev@email.com">My email address</a>
+    </li>
+    <li>
+        Dial <a href="tel:+7852246976">my phone number</a>
+    </li>
+    <li>
+        Open <a href="https://www.google.com/" target="_blank">Google</a> in a new tab
+    </li>
+     
+</ul>
+<hr>
+
+&lt;&lt;&lt; &copy; <a href="about.html">Tyler Waugh</a> &gt;&gt;&gt;
+<p>
+    <a href="/">Back To Home</a>
+</p>
+
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+     
+  </body>
 
 </html>
+
+
