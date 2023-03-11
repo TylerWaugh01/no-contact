@@ -15,7 +15,6 @@
 <style>
   body {
     font-family: "Lato", sans-serif;
-    /* background-color: rgb(247, 145, 2); */
   }
 
   .sidenav {
@@ -57,7 +56,125 @@
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }   
   }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+a:hover, a:active {
+    color: #97a7b3ff
+} 
+
+ table, tr, th, td, caption {
+    border: 1px solid darkorange;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+  nav {
+  left:0px;
+  right:0px;
+  width: 100%;
+	float: right;
+	padding: 0;
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+ 
+   li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+
+  p {
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+ h1 {
+  position: static;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+ .item1 { grid-area: title; }
+    .item1 { grid-area: text; }
+    .item2 { grid-area: image; }
+
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'text text text image';
+      gap: 10px;
+      padding: 10px;
+    }
+    
+     .grid-container > div {
+      text-align: left;
+      padding: 20px 0;
+    }
+    
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+    
   </style>
   </head>
   <body>
@@ -97,57 +214,10 @@
     </div>
   </body>
 
+       
 
-
-
-
-
-
-    <!-- <div class="grid-container">
-      <div class="item1">
-      <p>
-          In a "no contact delivery", the only communication between driver and
-          customer is often a doorstep photograph proving a sucessful delivery. This pixel receipt is the new food in front of their familiar home. A
-          timestamp of a sucessful job completed. This temporarily information/data
-          available in the app.
-        </p>
-      </div>
-       <div class="item2">
-        <img src="img/2.JPG" title="House with double xmas tree" width="600" height="700" />
-      </div>
-    </div>
-     -->
-
-        <div class="carousel item3" data-carousel>
-      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-      <ul data-slides>
-        <li class="slide" data-active>
-          <img src="img/1.JPG" alt="A house with food outside" title="house with food" width="50" height="100"
-          />
-        </li> 
-        <li class="slide">
-          <img src="img/2.JPG" title="House with double xmas tree" width="50" height="100" />
-          
-        </li> 
-        <li class="slide">
-          <img src="img/3.JPG" title="Blue door house" width="50" height="100"  />         
-        </li> 
-        <li class="slide">
-          <img src="img/4.JPG" title="house with food" width="50" height="100" />
-        </li>
-        </ul>
-      </div>
-    </div> -->
-<!--  
     <footer>
-    <p>
-      &lt;&lt;&lt; &copy; <a href="about.html">Tyler Waugh</a> &gt;&gt;&gt;
-    </p>
-    <p>
-      <a href="#">Back To Top</a>
-    </p>
+    
   </footer>
-</body> -->
 
 </html>
