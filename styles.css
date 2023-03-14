@@ -34,14 +34,13 @@ a:hover, a:active {
 
 ul {
     list-style-type: none;
+    list-style-position: outside;
     margin: 0;
     padding: 0;
     overflow: auto;
   }
  
-    li {
-    float: left;
-  }
+   
  
    li a {
     text-decoration: none;
@@ -51,6 +50,10 @@ ul {
    li a:hover {
     color: #ada3a3;
   } 
+
+  li {
+    float: left;
+  }
 
   p {
     font-size: medium;
